@@ -1,7 +1,7 @@
 import 'package:enigma/common_libraries.dart';
 import 'package:enigma/routes.dart';
 
-void main() {
+void mainDelegate() {
   runApp(const MyApp());
 }
 

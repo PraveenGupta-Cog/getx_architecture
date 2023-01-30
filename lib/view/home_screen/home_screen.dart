@@ -1,5 +1,6 @@
 import 'package:enigma/common_libraries.dart';
 import 'package:enigma/view/common/enigma_scaffold.dart';
+import '../../routes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -10,9 +11,10 @@ class HomeScreen extends StatelessWidget {
     return EnigmaScaffold(
       child: ElevatedButton(
         onPressed: () {
-          buildBottomSheet();
+          //buildBottomSheet();
+          Get.toNamed(Routes.formScreen);
         },
-        child: const Text("Open BottomSheet"),
+        child: const Text("Open Form"),
       ),
     );
   }

@@ -13,7 +13,6 @@ class AppColors {
   final Color black = const Color(0xFF1E1B18);
 
   final bool isDark = false;
-
   ThemeData toThemeData() {
     /// Create a TextTheme and ColorScheme, that we can use to generate ThemeData
     TextTheme txtTheme = (isDark ? ThemeData.dark() : ThemeData.light()).textTheme;

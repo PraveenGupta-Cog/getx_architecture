@@ -49,6 +49,10 @@ class AppStyle {
 
   /// Shared sizes
   late final _Sizes sizes = _Sizes();
+
+  ///Border Sides
+ final _BorderSide borderSide = _BorderSide();
+
 }
 
 @immutable
@@ -106,6 +110,30 @@ class _Times {
   final Duration med = const Duration(milliseconds: 600);
   final Duration slow = const Duration(milliseconds: 900);
   final Duration pageTransition = const Duration(milliseconds: 200);
+}
+
+@immutable
+class _BorderSide {
+  final InputBorder? focusedBorder = OutlineInputBorder(
+    borderSide: const BorderSide(color: Colors.green, width: 1.0),
+    borderRadius: BorderRadius.circular(8.0),
+  );
+  final InputBorder? enabledBorder = OutlineInputBorder(
+    borderSide: const BorderSide(color: Colors.cyan, width: 1.0),
+    borderRadius: BorderRadius.circular(8.0),
+  );
+  final InputBorder? errorBorder = OutlineInputBorder(
+    borderSide: const BorderSide(color: Colors.red, width: 1.0),
+    borderRadius: BorderRadius.circular(8.0),
+  );
+  final InputBorder? focusedErrorBorder = OutlineInputBorder(
+    borderSide: const BorderSide(color: Colors.red, width: 1.0),
+    borderRadius: BorderRadius.circular(8.0),
+  );
+  final InputBorder? disabledBorder = OutlineInputBorder(
+    borderSide: const BorderSide(color: Colors.grey, width: 1.0),
+    borderRadius: BorderRadius.circular(8.0),
+  );
 }
 
 @immutable
